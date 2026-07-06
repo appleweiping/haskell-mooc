@@ -7,7 +7,7 @@ SETS="1 2a 2b 3a 3b 4a 4b 5a 5b 6 7 8 9a 9b 10a 10b 11a 11b 12 13a 13b 14a 14b 1
 : > ../results/SUMMARY.txt
 for s in $SETS; do
   echo "===== Set${s} ====="
-  out=$(stack runghc "Set${s}Test.hs" 2>&1)
+  out=$(NO_COLOR=1 stack runghc "Set${s}Test.hs" 2>&1)
   echo "$out" > "../results/Set${s}.txt"
   # extract the final "score / total" line
   score=$(echo "$out" | grep -E "^[0-9]+ / [0-9]+" | tail -1)
