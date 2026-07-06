@@ -188,9 +188,8 @@ normalizePhone :: String -> Validation String
 normalizePhone s = check (length stripped <= 10) "Too long" stripped
                 *> traverse checkChar stripped
                 *> pure stripped
-  where stripped = filter (not . isSpace) s
+  where stripped = filter (/= ' ') s
         checkChar c = check (isDigit c) ("Invalid character: " ++ [c]) c
-        isSpace c = c == ' '
 
 ------------------------------------------------------------------------------
 -- Ex 9: Parsing expressions. The Expression type describes an

@@ -3,3 +3,8 @@
 .stack-work/
 score.json
 results/*.tmp
+# artifacts produced by running the exercises
+exercises/bank.db
+exercises/*.png
+*.hi
+*.o
