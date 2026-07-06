@@ -26,7 +26,26 @@ in the `SetN.hs` files are mine.
 Each set is graded by its own `SetNTest.hs`, which prints a per-set `X / Y` score and writes
 `score.json`. Full captured output is in [`results/`](results/).
 
-<!-- RESULTS_TABLE -->
+**Every exercise passes: 248 / 248 across all 26 test suites (Sets 1–16).**
+
+| Set | Topic | Score | Set | Topic | Score |
+|---|---|---|---|---|---|
+| Set1  | Bool/Int/arithmetic         | 11/11 | Set9b  | N-Queens solver             | 9/9   |
+| Set2a | recursion                   | 11/11 | Set10a | laziness, infinite lists    | 9/9   |
+| Set2b | pattern matching            | 8/8   | Set10b | forcing without `seq`       | 4/4   |
+| Set3a | lists & strings             | 14/14 | Set11a | IO, do-notation             | 10/10 |
+| Set3b | `Maybe`/`Either`            | 10/10 | Set11b | `IORef`, file handles       | 7/7   |
+| Set4a | type classes                | 12/12 | Set12  | `Functor`/`Foldable`        | 11/11 |
+| Set4b | folds, HOFs                 | 7/7   | Set13a | `Maybe`/`State`/`Logger`    | 10/10 |
+| Set5a | algebraic datatypes         | 12/12 | Set13b | list monad, custom `SL`     | 9/9   |
+| Set5b | binary trees                | 10/10 | Set14a | `Text`/`ByteString`         | 8/8   |
+| Set6  | class instances             | 12/12 | Set14b | SQLite bank HTTP API        | 8/8   |
+| Set7  | `Semigroup`/`Monoid`, DSL   | 10/10 | Set15  | `Applicative`/`Validation`  | 15/15 |
+| Set8  | functional image library    | 10/10 | Set16a | QuickCheck properties       | 7/7   |
+| Set9a | misc functions              | 9/9   | Set16b | phantom types               | 5/5   |
+
+Each `results/SetN.txt` contains the full per-exercise `+++++ Pass` output and the final `X / Y`
+line from that set's `SetNTest.hs`. Aggregate: **248 passed / 248 total**.
 
 ## Implemented assignments
 

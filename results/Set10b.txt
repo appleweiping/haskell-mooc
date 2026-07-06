@@ -1,0 +1,11 @@
+===== EXERCISE 1
++++++ Pass
+===== EXERCISE 2
++++++ Pass
+===== EXERCISE 3
++++++ Pass
+===== EXERCISE 4
++++++ Pass
+===== TOTAL
+1111
+4 / 4
